@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 45526057}
   - component: {fileID: 45526056}
   m_Layer: 0
-  m_Name: stone (14)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,7 +200,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &69758016
 GameObject:
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 69758018}
   - component: {fileID: 69758017}
   m_Layer: 0
-  m_Name: stone (8)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &107163266
 GameObject:
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 107163268}
   - component: {fileID: 107163267}
   m_Layer: 0
-  m_Name: floatG (7)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,7 +389,7 @@ Transform:
   m_LocalScale: {x: 0.27294603, y: 0.6505592, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161712813
 GameObject:
@@ -405,8 +405,8 @@ GameObject:
   - component: {fileID: 161712814}
   - component: {fileID: 161712818}
   m_Layer: 0
-  m_Name: Coin (35)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,7 +421,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 261659789}
   - component: {fileID: 261659792}
   m_Layer: 0
-  m_Name: floatG (2)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,8 +738,8 @@ GameObject:
   - component: {fileID: 287753556}
   - component: {fileID: 287753560}
   m_Layer: 0
-  m_Name: Coin (4)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -754,7 +754,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -868,7 +868,7 @@ GameObject:
   - component: {fileID: 353186106}
   - component: {fileID: 353186109}
   m_Layer: 0
-  m_Name: floatG (3)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 356101374}
   - component: {fileID: 356101373}
   m_Layer: 0
-  m_Name: stone (2)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1055,7 +1055,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376718772
 GameObject:
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 376718774}
   - component: {fileID: 376718773}
   m_Layer: 0
-  m_Name: floatG (9)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1163,7 +1163,7 @@ Transform:
   m_LocalScale: {x: 0.27294603, y: 0.6505592, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25}
 --- !u!1 &376912488
 GameObject:
@@ -1176,7 +1176,7 @@ GameObject:
   - component: {fileID: 376912490}
   - component: {fileID: 376912489}
   m_Layer: 0
-  m_Name: stone (10)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1244,7 +1244,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390926978
 GameObject:
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 390926980}
   - component: {fileID: 390926979}
   m_Layer: 0
-  m_Name: cloud3 (5)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1325,7 +1325,7 @@ Transform:
   m_LocalScale: {x: 1.5773648, y: 1.566262, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408087347
 GameObject:
@@ -1341,8 +1341,8 @@ GameObject:
   - component: {fileID: 408087348}
   - component: {fileID: 408087352}
   m_Layer: 0
-  m_Name: Coin (15)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1357,7 +1357,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 415259282}
   - component: {fileID: 415259285}
   m_Layer: 0
-  m_Name: floatG
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1658,7 +1658,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &451719733
 GameObject:
@@ -1671,7 +1671,7 @@ GameObject:
   - component: {fileID: 451719735}
   - component: {fileID: 451719734}
   m_Layer: 0
-  m_Name: cloud3
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1739,7 +1739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &477030116
 GameObject:
@@ -1752,7 +1752,7 @@ GameObject:
   - component: {fileID: 477030118}
   - component: {fileID: 477030117}
   m_Layer: 0
-  m_Name: stone (12)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1820,7 +1820,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512245257
 GameObject:
@@ -1836,8 +1836,8 @@ GameObject:
   - component: {fileID: 512245258}
   - component: {fileID: 512245262}
   m_Layer: 0
-  m_Name: Coin (40)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,7 +1852,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2085,8 +2085,8 @@ GameObject:
   - component: {fileID: 528781315}
   - component: {fileID: 528781319}
   m_Layer: 0
-  m_Name: Coin (11)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +2101,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2216,8 +2216,8 @@ GameObject:
   - component: {fileID: 598226156}
   - component: {fileID: 598226160}
   m_Layer: 0
-  m_Name: Coin (2)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2232,7 +2232,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2347,8 +2347,8 @@ GameObject:
   - component: {fileID: 601258359}
   - component: {fileID: 601258363}
   m_Layer: 0
-  m_Name: Coin (31)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2363,7 +2363,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2478,8 +2478,8 @@ GameObject:
   - component: {fileID: 608492845}
   - component: {fileID: 608492849}
   m_Layer: 0
-  m_Name: Coin (32)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2494,7 +2494,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2606,7 +2606,7 @@ GameObject:
   - component: {fileID: 631491737}
   - component: {fileID: 631491736}
   m_Layer: 0
-  m_Name: cloud3 (7)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2674,7 +2674,7 @@ Transform:
   m_LocalScale: {x: 1.6642702, y: 1.3390541, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631800920
 GameObject:
@@ -2690,8 +2690,8 @@ GameObject:
   - component: {fileID: 631800921}
   - component: {fileID: 631800925}
   m_Layer: 0
-  m_Name: Coin (17)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2706,7 +2706,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2821,8 +2821,8 @@ GameObject:
   - component: {fileID: 632747099}
   - component: {fileID: 632747103}
   m_Layer: 0
-  m_Name: Coin (29)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2837,7 +2837,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2949,7 +2949,7 @@ GameObject:
   - component: {fileID: 635518396}
   - component: {fileID: 635518395}
   m_Layer: 0
-  m_Name: cloud3 (2)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3017,7 +3017,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671828171
 GameObject:
@@ -3030,7 +3030,7 @@ GameObject:
   - component: {fileID: 671828173}
   - component: {fileID: 671828172}
   m_Layer: 0
-  m_Name: cloud3 (6)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3098,7 +3098,7 @@ Transform:
   m_LocalScale: {x: -2.162473, y: 1.207585, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &697209370
 GameObject:
@@ -3114,8 +3114,8 @@ GameObject:
   - component: {fileID: 697209371}
   - component: {fileID: 697209375}
   m_Layer: 0
-  m_Name: Coin (8)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3130,7 +3130,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3245,8 +3245,8 @@ GameObject:
   - component: {fileID: 701175733}
   - component: {fileID: 701175737}
   m_Layer: 0
-  m_Name: Coin (28)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3261,7 +3261,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3376,8 +3376,8 @@ GameObject:
   - component: {fileID: 711446265}
   - component: {fileID: 711446269}
   m_Layer: 0
-  m_Name: Coin (38)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3392,7 +3392,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3654,8 +3654,8 @@ GameObject:
   - component: {fileID: 712205400}
   - component: {fileID: 712205404}
   m_Layer: 0
-  m_Name: Coin (18)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3670,7 +3670,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3783,7 +3783,7 @@ GameObject:
   - component: {fileID: 746509390}
   - component: {fileID: 746509389}
   m_Layer: 0
-  m_Name: spike (2)
+  m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3917,7 +3917,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758771460
 GameObject:
@@ -3930,7 +3930,7 @@ GameObject:
   - component: {fileID: 758771462}
   - component: {fileID: 758771461}
   m_Layer: 0
-  m_Name: cloud3 (3)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3998,7 +3998,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &760487085
 GameObject:
@@ -4014,8 +4014,8 @@ GameObject:
   - component: {fileID: 760487086}
   - component: {fileID: 760487090}
   m_Layer: 0
-  m_Name: Coin (37)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4030,7 +4030,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4145,8 +4145,8 @@ GameObject:
   - component: {fileID: 763392041}
   - component: {fileID: 763392045}
   m_Layer: 0
-  m_Name: Coin (3)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4161,7 +4161,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4273,7 +4273,7 @@ GameObject:
   - component: {fileID: 782375430}
   - component: {fileID: 782375429}
   m_Layer: 0
-  m_Name: stone (6)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4341,7 +4341,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &814551877
 GameObject:
@@ -4357,8 +4357,8 @@ GameObject:
   - component: {fileID: 814551878}
   - component: {fileID: 814551882}
   m_Layer: 0
-  m_Name: Coin (20)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4373,7 +4373,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4485,7 +4485,7 @@ GameObject:
   - component: {fileID: 826371140}
   - component: {fileID: 826371139}
   m_Layer: 0
-  m_Name: stone (9)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4553,7 +4553,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844122267
 GameObject:
@@ -4570,7 +4570,7 @@ GameObject:
   - component: {fileID: 844122272}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4585,7 +4585,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4700,8 +4700,8 @@ GameObject:
   - component: {fileID: 855688747}
   - component: {fileID: 855688751}
   m_Layer: 0
-  m_Name: Coin (10)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4716,7 +4716,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4829,7 +4829,7 @@ GameObject:
   - component: {fileID: 922098535}
   - component: {fileID: 922098534}
   m_Layer: 0
-  m_Name: tile ground (5)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4923,7 +4923,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &945647780
 GameObject:
@@ -4938,7 +4938,7 @@ GameObject:
   - component: {fileID: 945647781}
   - component: {fileID: 945647784}
   m_Layer: 0
-  m_Name: tile ground (4)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5058,7 +5058,7 @@ GameObject:
   - component: {fileID: 968273586}
   - component: {fileID: 968273585}
   m_Layer: 0
-  m_Name: floatG (8)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5152,7 +5152,7 @@ Transform:
   m_LocalScale: {x: 0.27294603, y: 0.6505592, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969206638
 GameObject:
@@ -5168,8 +5168,8 @@ GameObject:
   - component: {fileID: 969206639}
   - component: {fileID: 969206643}
   m_Layer: 0
-  m_Name: Coin (27)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5184,7 +5184,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5299,8 +5299,8 @@ GameObject:
   - component: {fileID: 991693967}
   - component: {fileID: 991693971}
   m_Layer: 0
-  m_Name: Coin (39)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5315,7 +5315,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5430,8 +5430,8 @@ GameObject:
   - component: {fileID: 1020604623}
   - component: {fileID: 1020604627}
   m_Layer: 0
-  m_Name: Coin (43)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5446,7 +5446,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5558,7 +5558,7 @@ GameObject:
   - component: {fileID: 1021797010}
   - component: {fileID: 1021797009}
   m_Layer: 0
-  m_Name: stone (13)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5626,7 +5626,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027248109
 GameObject:
@@ -5642,8 +5642,8 @@ GameObject:
   - component: {fileID: 1027248110}
   - component: {fileID: 1027248114}
   m_Layer: 0
-  m_Name: Coin (34)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5658,7 +5658,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5772,7 +5772,7 @@ GameObject:
   - component: {fileID: 1065790766}
   - component: {fileID: 1065790769}
   m_Layer: 0
-  m_Name: tile ground (3)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5894,8 +5894,8 @@ GameObject:
   - component: {fileID: 1138496291}
   - component: {fileID: 1138496295}
   m_Layer: 0
-  m_Name: Coin (42)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5910,7 +5910,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6025,8 +6025,8 @@ GameObject:
   - component: {fileID: 1187201212}
   - component: {fileID: 1187201216}
   m_Layer: 0
-  m_Name: Coin (6)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6041,7 +6041,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6155,7 +6155,7 @@ GameObject:
   - component: {fileID: 1189472541}
   - component: {fileID: 1189472544}
   m_Layer: 0
-  m_Name: floatG (4)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6277,8 +6277,8 @@ GameObject:
   - component: {fileID: 1196266515}
   - component: {fileID: 1196266519}
   m_Layer: 0
-  m_Name: Coin (26)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6293,7 +6293,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6408,8 +6408,8 @@ GameObject:
   - component: {fileID: 1215729442}
   - component: {fileID: 1215729446}
   m_Layer: 0
-  m_Name: Coin (19)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6424,7 +6424,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6536,7 +6536,7 @@ GameObject:
   - component: {fileID: 1227274207}
   - component: {fileID: 1227274206}
   m_Layer: 0
-  m_Name: stone (3)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6604,7 +6604,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1237210206
 GameObject:
@@ -6617,7 +6617,7 @@ GameObject:
   - component: {fileID: 1237210208}
   - component: {fileID: 1237210207}
   m_Layer: 0
-  m_Name: stone (1)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6685,7 +6685,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242729258
 GameObject:
@@ -6701,8 +6701,8 @@ GameObject:
   - component: {fileID: 1242729259}
   - component: {fileID: 1242729263}
   m_Layer: 0
-  m_Name: Coin (36)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6717,7 +6717,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6831,7 +6831,7 @@ GameObject:
   - component: {fileID: 1259836006}
   - component: {fileID: 1259836009}
   m_Layer: 0
-  m_Name: floatG (5)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7074,8 +7074,8 @@ GameObject:
   - component: {fileID: 1280080941}
   - component: {fileID: 1280080945}
   m_Layer: 0
-  m_Name: Coin (16)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7090,7 +7090,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7205,8 +7205,8 @@ GameObject:
   - component: {fileID: 1305430248}
   - component: {fileID: 1305430252}
   m_Layer: 0
-  m_Name: Coin (13)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7221,7 +7221,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7336,8 +7336,8 @@ GameObject:
   - component: {fileID: 1334463827}
   - component: {fileID: 1334463831}
   m_Layer: 0
-  m_Name: Coin (1)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7352,7 +7352,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7467,8 +7467,8 @@ GameObject:
   - component: {fileID: 1336480899}
   - component: {fileID: 1336480903}
   m_Layer: 0
-  m_Name: Coin (25)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7483,7 +7483,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7649,7 +7649,7 @@ Transform:
   m_Children:
   - {fileID: 2090914329}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1390294344
 GameObject:
@@ -7663,7 +7663,7 @@ GameObject:
   - component: {fileID: 1390294346}
   - component: {fileID: 1390294345}
   m_Layer: 0
-  m_Name: spike (1)
+  m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7797,7 +7797,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410240760
 GameObject:
@@ -7812,7 +7812,7 @@ GameObject:
   - component: {fileID: 1410240761}
   - component: {fileID: 1410240764}
   m_Layer: 0
-  m_Name: floatG (1)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7934,8 +7934,8 @@ GameObject:
   - component: {fileID: 1412745191}
   - component: {fileID: 1412745195}
   m_Layer: 0
-  m_Name: Coin (45)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7950,7 +7950,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8065,8 +8065,8 @@ GameObject:
   - component: {fileID: 1443320699}
   - component: {fileID: 1443320703}
   m_Layer: 0
-  m_Name: Coin (5)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8081,7 +8081,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8195,7 +8195,7 @@ GameObject:
   - component: {fileID: 1454700088}
   - component: {fileID: 1454700091}
   m_Layer: 0
-  m_Name: tile ground (2)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8317,8 +8317,8 @@ GameObject:
   - component: {fileID: 1455920098}
   - component: {fileID: 1455920102}
   m_Layer: 0
-  m_Name: Coin (33)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8333,7 +8333,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8446,7 +8446,7 @@ GameObject:
   - component: {fileID: 1457955835}
   - component: {fileID: 1457955834}
   m_Layer: 0
-  m_Name: spike (3)
+  m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8580,7 +8580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477202095
 GameObject:
@@ -8661,7 +8661,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1482384216
 GameObject:
@@ -8675,7 +8675,7 @@ GameObject:
   - component: {fileID: 1482384218}
   - component: {fileID: 1482384217}
   m_Layer: 0
-  m_Name: floatG (6)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8769,7 +8769,7 @@ Transform:
   m_LocalScale: {x: 0.27294603, y: 0.6505592, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1485570178
 GameObject:
@@ -8785,8 +8785,8 @@ GameObject:
   - component: {fileID: 1485570179}
   - component: {fileID: 1485570183}
   m_Layer: 0
-  m_Name: Coin (7)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8801,7 +8801,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8916,8 +8916,8 @@ GameObject:
   - component: {fileID: 1503718559}
   - component: {fileID: 1503718563}
   m_Layer: 0
-  m_Name: Coin (30)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8932,7 +8932,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9179,7 +9179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582772979
 GameObject:
@@ -9192,7 +9192,7 @@ GameObject:
   - component: {fileID: 1582772981}
   - component: {fileID: 1582772980}
   m_Layer: 0
-  m_Name: stone (5)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9260,7 +9260,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1602463692
 GameObject:
@@ -9273,7 +9273,7 @@ GameObject:
   - component: {fileID: 1602463694}
   - component: {fileID: 1602463693}
   m_Layer: 0
-  m_Name: stone (7)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9341,7 +9341,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637016366
 GameObject:
@@ -9357,8 +9357,8 @@ GameObject:
   - component: {fileID: 1637016367}
   - component: {fileID: 1637016371}
   m_Layer: 0
-  m_Name: Coin (9)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9373,7 +9373,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9487,7 +9487,7 @@ GameObject:
   - component: {fileID: 1695872688}
   - component: {fileID: 1695872691}
   m_Layer: 0
-  m_Name: tile ground
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9609,8 +9609,8 @@ GameObject:
   - component: {fileID: 1738708058}
   - component: {fileID: 1738708062}
   m_Layer: 0
-  m_Name: Coin (21)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9625,7 +9625,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -9737,7 +9737,7 @@ GameObject:
   - component: {fileID: 1772753905}
   - component: {fileID: 1772753904}
   m_Layer: 0
-  m_Name: stone (11)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9805,7 +9805,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774047679
 GameObject:
@@ -9940,7 +9940,7 @@ GameObject:
   - component: {fileID: 1783803963}
   - component: {fileID: 1783803966}
   m_Layer: 0
-  m_Name: tile ground (1)
+  m_Name: float
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10059,7 +10059,7 @@ GameObject:
   - component: {fileID: 1820346842}
   - component: {fileID: 1820346841}
   m_Layer: 0
-  m_Name: cloud3 (1)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10127,7 +10127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1824399395
 GameObject:
@@ -10143,8 +10143,8 @@ GameObject:
   - component: {fileID: 1824399396}
   - component: {fileID: 1824399400}
   m_Layer: 0
-  m_Name: Coin (24)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10159,7 +10159,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10274,8 +10274,8 @@ GameObject:
   - component: {fileID: 1843547082}
   - component: {fileID: 1843547086}
   m_Layer: 0
-  m_Name: Coin (23)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10290,7 +10290,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10402,7 +10402,7 @@ GameObject:
   - component: {fileID: 1890322081}
   - component: {fileID: 1890322080}
   m_Layer: 0
-  m_Name: stone (4)
+  m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10470,7 +10470,7 @@ Transform:
   m_LocalScale: {x: 4.160265, y: 2.9294236, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900912113
 GameObject:
@@ -10486,8 +10486,8 @@ GameObject:
   - component: {fileID: 1900912114}
   - component: {fileID: 1900912118}
   m_Layer: 0
-  m_Name: Coin (44)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10502,7 +10502,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10617,8 +10617,8 @@ GameObject:
   - component: {fileID: 1916948757}
   - component: {fileID: 1916948761}
   m_Layer: 0
-  m_Name: Coin (12)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10633,7 +10633,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10745,7 +10745,7 @@ GameObject:
   - component: {fileID: 1932012123}
   - component: {fileID: 1932012122}
   m_Layer: 0
-  m_Name: cloud3 (4)
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10813,7 +10813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2016768223
 GameObject:
@@ -10829,8 +10829,8 @@ GameObject:
   - component: {fileID: 2016768224}
   - component: {fileID: 2016768228}
   m_Layer: 0
-  m_Name: Coin (14)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10845,7 +10845,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10960,8 +10960,8 @@ GameObject:
   - component: {fileID: 2066422701}
   - component: {fileID: 2066422705}
   m_Layer: 0
-  m_Name: Coin (22)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10976,7 +10976,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11178,8 +11178,8 @@ GameObject:
   - component: {fileID: 2125861927}
   - component: {fileID: 2125861931}
   m_Layer: 0
-  m_Name: Coin (41)
-  m_TagString: Untagged
+  m_Name: Coin
+  m_TagString: coins
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11194,7 +11194,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11334,6 +11334,7 @@ MonoBehaviour:
   i: 0
   score: 0
   scoreAdded: 10
+  dir: 114
   ob: {fileID: 0}
   obj: {fileID: 0}
 --- !u!50 &2132303312

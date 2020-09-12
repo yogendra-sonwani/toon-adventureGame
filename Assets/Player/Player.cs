@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public int i = 0;
     public int score = 0;
     public int scoreAdded = 10;
+    public int coincollected = 0;
+    public char dir = 'r';
     public Floor ob;
     public Coins obj;
     Vector3 move;
@@ -22,13 +24,19 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.collider.GetComponent<Floor>() != null)
         {
-            inAir = ob.resetJump(inAir);
-            jforce = ob.resetJumpF(jforce);
-            i = ob.resetI(i);
+            if(collision.contacts[0].normal.y > -0.5){
+                inAir = ob.resetJump(inAir);
+                jforce = ob.resetJumpF(jforce);
+                i = ob.resetI(i);
+            }
         }
-        if (collision.collider.GetComponent<Coins>() != null)
-        {
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.CompareTag("coins")){
             score = score + scoreAdded;
+            coincollected += 1;
+            Destroy(other.gameObject);
         }
     }
 
