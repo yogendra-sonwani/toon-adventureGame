@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public Floor ob;
     public Coins obj;
     public Spikes sobj;
+    public static bool draggable = false;
     Vector3 move;
     // Start is called before the first frame update
     void Awake(){
@@ -27,6 +28,12 @@ public class Player : MonoBehaviour
                 inAir = ob.resetJump(inAir);
                 jforce = ob.resetJumpF(jforce);
                 i = ob.resetI(i);
+            }
+            if(draggable == true){
+                ob.dragg();
+            }
+            if(GetComponent<SpriteRenderer>().color == Color.yellow){
+                GetComponent<SpriteRenderer>().color = Color.white;
             }
         }
         if (collision.collider.GetComponent<Spikes>() != null)
@@ -94,5 +101,13 @@ public class Player : MonoBehaviour
             enrmyT = 0;
         }
         GetComponent<SpriteRenderer>().color = Color.red;
+    }
+
+    private void OnMouseDrag() {
+        if(draggable == true)
+        {
+            Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector3(newPos.x, newPos.y);
+        }
     }
 }
