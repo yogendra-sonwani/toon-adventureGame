@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - coins
+  - dragon
+  - swing
+  - player
   layers:
   - Default
   - TransparentFX

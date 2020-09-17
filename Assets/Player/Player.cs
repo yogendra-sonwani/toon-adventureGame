@@ -7,18 +7,17 @@ public class Player : MonoBehaviour
     public float mspeed = 6.0f;
     public bool inAir = false;
     public float jforce = 25f;
-    public int i = 0;
-    public int score = 0;
-    public int scoreAdded = 10;
-    public int coincollected = 0;
+    public int i = 0, enrmyT = 0;
     public char dir = 'r';
     public Floor ob;
     public Coins obj;
+    public Spikes sobj;
     Vector3 move;
     // Start is called before the first frame update
     void Awake(){
         ob = GameObject.FindObjectOfType<Floor>();
         obj = GameObject.FindObjectOfType<Coins>();
+        sobj = GameObject.FindObjectOfType<Spikes>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -30,12 +29,22 @@ public class Player : MonoBehaviour
                 i = ob.resetI(i);
             }
         }
+        if (collision.collider.GetComponent<Spikes>() != null)
+        {
+            halfhealth();
+            if(collision.contacts[0].normal.y > -0.5){
+                inAir = sobj.resetJump(inAir);
+                jforce = sobj.resetJumpF(jforce);
+                i = sobj.resetI(i);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("coins")){
-            score = score + scoreAdded;
-            coincollected += 1;
+            Destroy(other.gameObject);
+        }
+        if(other.gameObject.CompareTag("dragon")){
             Destroy(other.gameObject);
         }
     }
@@ -74,5 +83,16 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow)){
             transform.localScale = new Vector3(-1.3f, 1.3f, 1.0f);}
+    }
+
+    void halfhealth()
+    {
+        enrmyT += 1;
+        if(enrmyT == 2)
+        {
+            Destroy(gameObject);
+            enrmyT = 0;
+        }
+        GetComponent<SpriteRenderer>().color = Color.red;
     }
 }
