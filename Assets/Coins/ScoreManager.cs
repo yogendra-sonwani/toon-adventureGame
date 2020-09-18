@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public GameObject changeScore;
-    public static int scorec;
+    public static int scorec = 0;
     void Update() {
         changeScore.GetComponent<Text>().text = "X " + scorec;
     }

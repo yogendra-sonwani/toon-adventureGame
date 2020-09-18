@@ -8,7 +8,7 @@ public class Coins : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("player")){
             // collectSound.Play();
-            ScoreManager.scorec += 2;
+            ScoreManager.scorec += 1;
             Destroy(gameObject);
         }
     }

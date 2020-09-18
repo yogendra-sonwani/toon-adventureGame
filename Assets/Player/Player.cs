@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float mspeed = 6.0f;
-    public bool inAir = false;
+    public float mspeed = 3.0f;
+    public bool inAir = false, dragged = false;
     public float jforce = 25f;
     public int i = 0, enrmyT = 0;
     public char dir = 'r';
+    Vector3 characterScale;
+    Vector3 playerCpos;
+    float characterScaleX;
     public Floor ob;
     public Coins obj;
     public Spikes sobj;
@@ -19,6 +22,11 @@ public class Player : MonoBehaviour
         ob = GameObject.FindObjectOfType<Floor>();
         obj = GameObject.FindObjectOfType<Coins>();
         sobj = GameObject.FindObjectOfType<Spikes>();
+    }
+
+    void Start() {
+        characterScale = transform.localScale;
+        characterScaleX = characterScale.x;
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -45,6 +53,11 @@ public class Player : MonoBehaviour
                 i = sobj.resetI(i);
             }
         }
+        if (collision.collider.GetComponent<SwingThrow>() != null)
+        {
+            playerCpos = transform.position;
+            Debug.Log(playerCpos);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -60,10 +73,28 @@ public class Player : MonoBehaviour
     void Update()
     {
         Uplift();
-        TurnLeft();
-        TurnRight();
         move = new Vector3 (Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += move * Time.deltaTime * (mspeed);
+        transform.Translate(Input.GetAxis("Horizontal") * mspeed * Time.deltaTime, 0f, 0f);
+
+        // character flip
+        if(Input.GetAxis("Horizontal") < 0) {
+            characterScale.x = -characterScaleX;
+        }
+        if(Input.GetAxis("Horizontal") > 0) {
+            characterScale.x = characterScaleX;
+        }
+        transform.localScale = characterScale;
+        transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x,-20.9f,25.4f),
+            Mathf.Clamp(transform.position.y,-5f,1000f)
+        );
+        if(draggable == true && dragged = true){
+            if(transform.position.y > 34.17 || transform.position.y < 41.89 || transform.position.x > 2.82 || transform.position.x < 14.45){
+                string currentScene = SceneManager.GetActiveScene().name;
+                SceneManager.LoadScene(currentScene);
+            }
+        }
     }
 
     void Uplift()
@@ -81,17 +112,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    void TurnLeft()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftArrow)){
-            transform.localScale = new Vector3(1.3f, 1.3f, 1.0f);}
-    }
-    void TurnRight()
-    {
-        if (Input.GetKeyDown(KeyCode.RightArrow)){
-            transform.localScale = new Vector3(-1.3f, 1.3f, 1.0f);}
-    }
-
     void halfhealth()
     {
         enrmyT += 1;
@@ -103,11 +123,24 @@ public class Player : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.red;
     }
 
+    private void OnMouseUp() {
+        if(draggable == true){
+            dragged = false;
+            Vector2 dirTinit = playerCpos - transform.position;
+            GetComponent<Rigidbody2D>().AddForce(dirTinit * 1100);
+        }
+    }
+
     private void OnMouseDrag() {
         if(draggable == true)
         {
+            dragged = true;
             Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(newPos.x, newPos.y);
         }
+    }
+
+    public void destroyMe(){
+        Destroy(gameObject);
     }
 }

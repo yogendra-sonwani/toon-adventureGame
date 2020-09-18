@@ -8,6 +8,8 @@ TagManager:
   - dragon
   - swing
   - player
+  - turn
+  - floor
   layers:
   - Default
   - TransparentFX
