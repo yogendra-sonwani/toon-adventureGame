@@ -10,6 +10,7 @@ TagManager:
   - player
   - turn
   - floor
+  - bullet
   layers:
   - Default
   - TransparentFX

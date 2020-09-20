@@ -18,8 +18,4 @@ public class Floor : MonoBehaviour
         i = 0;
         return i;
     }
-
-    public void dragg(){
-        Player.draggable = false;
-    }
 }

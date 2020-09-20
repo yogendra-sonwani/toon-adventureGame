@@ -10,4 +10,8 @@ public class ScoreManager : MonoBehaviour
     void Update() {
         changeScore.GetComponent<Text>().text = "X " + scorec;
     }
+    public void ResetS() {
+        scorec = 0;
+        changeScore.GetComponent<Text>().text = "X 0";
+    }
 }

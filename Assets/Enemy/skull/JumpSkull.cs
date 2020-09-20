@@ -7,6 +7,7 @@ public class JumpSkull : MonoBehaviour
     public float ms = 0.5f;
     public bool mr;
     public bool jskull = false;
+    public int health = 100;
     public Player ob;
     void Awake(){
         ob = GameObject.FindObjectOfType<Player>();
@@ -40,15 +41,20 @@ public class JumpSkull : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.collider.GetComponent<Player>() != null)
         {
-            if(!(collision.contacts[0].normal.y > -0.5)){
-                Destroy(gameObject);
-            }
-            else{
-                ob.destroyMe();
-            }
+            ob.destroyMe();
         }
         if (collision.collider.GetComponent<Floor>() != null){
             jskull = false;
         }
+    }
+    public void TakeDamage (int damage){
+        health -= damage;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+    void Die(){
+        Destroy(gameObject);
     }
 }

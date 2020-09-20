@@ -1,27 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float mspeed = 3.0f;
-    public bool inAir = false, dragged = false;
+    public bool inAir = false;
     public float jforce = 25f;
     public int i = 0, enrmyT = 0;
     public char dir = 'r';
     Vector3 characterScale;
-    Vector3 playerCpos;
     float characterScaleX;
     public Floor ob;
     public Coins obj;
     public Spikes sobj;
-    public static bool draggable = false;
+    public ScoreManager sm;
+    public static bool skills = false;
     Vector3 move;
     // Start is called before the first frame update
     void Awake(){
         ob = GameObject.FindObjectOfType<Floor>();
         obj = GameObject.FindObjectOfType<Coins>();
         sobj = GameObject.FindObjectOfType<Spikes>();
+        sm = GameObject.FindObjectOfType<ScoreManager>();
     }
 
     void Start() {
@@ -37,11 +39,13 @@ public class Player : MonoBehaviour
                 jforce = ob.resetJumpF(jforce);
                 i = ob.resetI(i);
             }
-            if(draggable == true){
-                ob.dragg();
-            }
-            if(GetComponent<SpriteRenderer>().color == Color.yellow){
-                GetComponent<SpriteRenderer>().color = Color.white;
+        }
+        if (collision.collider.GetComponent<Boss>() != null)
+        {
+            if(collision.contacts[0].normal.y > -0.5){
+                inAir = false;
+                jforce = 25.0f;
+                i = 0;
             }
         }
         if (collision.collider.GetComponent<Spikes>() != null)
@@ -53,10 +57,9 @@ public class Player : MonoBehaviour
                 i = sobj.resetI(i);
             }
         }
-        if (collision.collider.GetComponent<SwingThrow>() != null)
+        if (collision.collider.GetComponent<Boss>() != null)
         {
-            playerCpos = transform.position;
-            Debug.Log(playerCpos);
+            halfhealth();
         }
     }
 
@@ -64,8 +67,9 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("coins")){
             Destroy(other.gameObject);
         }
-        if(other.gameObject.CompareTag("dragon")){
+        if(other.gameObject.CompareTag("bullet")){
             Destroy(other.gameObject);
+            skills =true;
         }
     }
 
@@ -89,12 +93,6 @@ public class Player : MonoBehaviour
             Mathf.Clamp(transform.position.x,-20.9f,25.4f),
             Mathf.Clamp(transform.position.y,-5f,1000f)
         );
-        if(draggable == true && dragged = true){
-            if(transform.position.y > 34.17 || transform.position.y < 41.89 || transform.position.x > 2.82 || transform.position.x < 14.45){
-                string currentScene = SceneManager.GetActiveScene().name;
-                SceneManager.LoadScene(currentScene);
-            }
-        }
     }
 
     void Uplift()
@@ -117,30 +115,20 @@ public class Player : MonoBehaviour
         enrmyT += 1;
         if(enrmyT == 2)
         {
-            Destroy(gameObject);
             enrmyT = 0;
+            skills = false;
+            sm.ResetS();
+            Destroy(gameObject);
+            SceneManager.LoadScene(2);
         }
         GetComponent<SpriteRenderer>().color = Color.red;
     }
 
-    private void OnMouseUp() {
-        if(draggable == true){
-            dragged = false;
-            Vector2 dirTinit = playerCpos - transform.position;
-            GetComponent<Rigidbody2D>().AddForce(dirTinit * 1100);
-        }
-    }
-
-    private void OnMouseDrag() {
-        if(draggable == true)
-        {
-            dragged = true;
-            Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector3(newPos.x, newPos.y);
-        }
-    }
-
     public void destroyMe(){
+        enrmyT = 0;
+        skills = false;
+        sm.ResetS();
         Destroy(gameObject);
+        SceneManager.LoadScene(2);
     }
 }
