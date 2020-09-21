@@ -5,19 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public float mspeed = 3.0f;
+    public float mspeed = 6.0f;
     public bool inAir = false;
     public float jforce = 25f;
     public int i = 0, enrmyT = 0;
     public char dir = 'r';
-    Vector3 characterScale;
-    float characterScaleX;
     public Floor ob;
     public Coins obj;
     public Spikes sobj;
     public ScoreManager sm;
+    public bool fr = true;
     public static bool skills = false;
-    Vector3 move;
     // Start is called before the first frame update
     void Awake(){
         ob = GameObject.FindObjectOfType<Floor>();
@@ -27,8 +25,7 @@ public class Player : MonoBehaviour
     }
 
     void Start() {
-        characterScale = transform.localScale;
-        characterScaleX = characterScale.x;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
@@ -44,7 +41,7 @@ public class Player : MonoBehaviour
         {
             if(collision.contacts[0].normal.y > -0.5){
                 inAir = false;
-                jforce = 25.0f;
+                jforce = 20.0f;
                 i = 0;
             }
         }
@@ -77,22 +74,24 @@ public class Player : MonoBehaviour
     void Update()
     {
         Uplift();
-        move = new Vector3 (Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += move * Time.deltaTime * (mspeed);
-        transform.Translate(Input.GetAxis("Horizontal") * mspeed * Time.deltaTime, 0f, 0f);
-
-        // character flip
-        if(Input.GetAxis("Horizontal") < 0) {
-            characterScale.x = -characterScaleX;
-        }
-        if(Input.GetAxis("Horizontal") > 0) {
-            characterScale.x = characterScaleX;
-        }
-        transform.localScale = characterScale;
+        float move = Input.GetAxis("Horizontal");
+        if(move < 0)
+            GetComponent<Rigidbody2D>().velocity = new Vector3(move * mspeed, GetComponent<Rigidbody2D>().velocity.y);
+        if(move > 0)
+            GetComponent<Rigidbody2D>().velocity = new Vector3(move * mspeed, GetComponent<Rigidbody2D>().velocity.y);
+        if(move < 0 && fr)
+            Flip();
+        if(move > 0 && !fr)
+            Flip();
         transform.position = new Vector3(
             Mathf.Clamp(transform.position.x,-20.9f,25.4f),
             Mathf.Clamp(transform.position.y,-5f,1000f)
         );
+    }
+
+    void Flip(){
+        fr = !fr;
+        transform.Rotate(Vector3.up * 180);
     }
 
     void Uplift()

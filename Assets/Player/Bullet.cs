@@ -17,9 +17,12 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitinfo) {
         JumpSkull js = hitinfo.GetComponent<JumpSkull>();
         EnemyGun eg = hitinfo.GetComponent<EnemyGun>();
-        Mine m = hitinfo.GetComponent<Mine>();
+        Mines m = hitinfo.GetComponent<Mines>();
+        Boss b = hitinfo.GetComponent<Boss>();
+        Floor f = hitinfo.GetComponent<Floor>();
+        // Debug.Log(hitinfo.name);
         if(m != null){
-            eg.TakeDamage(100);
+            m.TakeDamage(100);
             Destroy(gameObject);
         }
         if(eg != null){
@@ -28,6 +31,13 @@ public class Bullet : MonoBehaviour
         }
         if(js != null){
             js.TakeDamage(34);
+            Destroy(gameObject);
+        }
+        if(b != null){
+            b.TakeDamage(20);
+            Destroy(gameObject);
+        }
+        if(f != null){
             Destroy(gameObject);
         }
     }

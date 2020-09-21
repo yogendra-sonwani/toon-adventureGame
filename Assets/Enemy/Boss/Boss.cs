@@ -7,6 +7,11 @@ public class Boss : MonoBehaviour
     public int health = 100;
     public float ms = 1.0f;
     public bool mr;
+    public wallDoor wd;
+    // Start is called before the first frame update
+    void Awake(){
+        wd = GameObject.FindObjectOfType<wallDoor>();
+    }
     // public GameObject deathEffect;
     void Update()
     {
@@ -39,6 +44,7 @@ public class Boss : MonoBehaviour
     }
     void Die(){
         // Instantiate(deathEffect, transform.position, Quaternion.identity);
+        wd.DestroyWall();
         Destroy(gameObject);
     }
 }
