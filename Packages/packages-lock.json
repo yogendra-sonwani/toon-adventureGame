@@ -69,9 +69,9 @@
       "dependencies": {}
     },
     "com.unity.cinemachine": {
-      "version": "file:F:/upm-package-cinemachine-master",
+      "version": "file:upm-package-cinemachine-master",
       "depth": 0,
-      "source": "local",
+      "source": "embedded",
       "dependencies": {}
     },
     "com.unity.collab-proxy": {

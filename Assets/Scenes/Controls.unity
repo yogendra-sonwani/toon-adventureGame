@@ -524,7 +524,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Controls\n\nLeft\t\t\tLeft Arrow\nRight\t\tRight Arrow\nJump\t\t\tUp Arrow\nFire\t\t\tLctrl"
+  m_text: "Controls\n\nLeft\t\t\t\tLeft Arrow\nRight\t\t\tRight Arrow\nJump\t\t\t\tUp
+    Arrow\nDouble Jump\t\tUp Arrow twice\nFire\t\t\t\tLctrl"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1060,7 +1061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062789049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.72, y: -0.28, z: 0}
+  m_LocalPosition: {x: 7.53, y: -0.28, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

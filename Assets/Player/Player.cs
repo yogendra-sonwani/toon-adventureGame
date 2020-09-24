@@ -117,6 +117,7 @@ public class Player : MonoBehaviour
             enrmyT = 0;
             skills = false;
             sm.ResetS();
+            Stone.spawn = false;
             Destroy(gameObject);
             SceneManager.LoadScene(2);
         }
@@ -127,6 +128,7 @@ public class Player : MonoBehaviour
         enrmyT = 0;
         skills = false;
         sm.ResetS();
+        Stone.spawn = false;
         Destroy(gameObject);
         SceneManager.LoadScene(2);
     }
